@@ -1,0 +1,86 @@
+a:hover{
+    color: crimson;
+}
+table,thead,td,tr,th{
+    padding: 0px;
+    border: 2px solid red;
+    border-collapse: collapse;
+    padding: 10px;
+    border-spacing: 250px;
+}
+td{
+    background-color: lightseagreen;
+}
+th{
+    background-color: lime;
+} 
+body{
+    
+    margin: 23px 19px;
+    padding: 1px;
+    background-color: lightgray
+   
+}
+form{
+    background-color: lightgray;
+    padding: 0px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="password"],
+fieldset,
+select,
+textarea{
+    width: 99%;
+    padding: 5px;
+    margin: 4px;
+    background-color: #ffff;
+    border:solid rgba(250, 205, 205, 0.568);
+    border-radius: 4px;
+}
+input[type="submit"]{
+    background-color: rgb(181, 159, 223);
+    color: rgb(227, 255, 182);
+}
+.payment,.card{
+    text-align: center;
+   
+}
+input[type="submit"]{
+    cursor: pointer;
+    background-color: rgb(72, 157, 160);
+    border: none;
+    width: 100px;
+    height: 20px;
+    border-radius: 4px;
+   
+  }
+  input[type="submit"]:hover{
+      color: rgb(0, 0, 0);
+      position:relative;
+      width: 100;
+      height: 50%;
+      top: 0;
+      left: 0;
+      transition: 00.3s ease;
+  }
+
+  .scrollToTop button {
+    .scrollToTop a button {
+      scroll-behavior: smooth;
+      background-color: @fullred;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 7%;
+      margin: 1%;
+    }
+    
+    }

@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Login form</title>  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="s.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+</head>
+<body>
+
+<div class="form-box">
+    <img src="logo.png" style="width: 100;padding-left: 120;" alt="">
+    
+    <h2>Login Here</h2>
+    <form>
+        <div class="input-group">
+            <label>Username</label>
+            <input class = "user" type="text"  placeholder="abc" >
+        </div>
+        <div class="input-group"> 
+            <label>Password</label>
+            <input class = "pass" type="password"  placeholder="123">
+        </div>
+        <div>
+            
+      <a href="a.html">  <button type="button" class="btn vm" >Submit &#10132;</button> </a>
+        </div>
+      
+    </form>  
+    <!-- <p>Login in with social media account</p>
+        <div class="social">
+            <img src="facebook.png">
+            <img src="twitter.png">
+            <img src="google.png"> -->
+        </div>
+        
+    </div>
+ 
+    <script>
+        document.querySelector(".btn").addEventListener('click',function(){
+            let a=document.querySelector('.user').value;
+            let b=document.querySelector('.pass').value;
+            
+            
+           if(a.length==0 && b.length==0){
+            window.alert("please login");
+           
+
+            
+        }
+         else if(a.length==0 || b.length==0){
+            window.alert("please login")
+            
+         }
+         else{
+            window.alert("login successfull")
+         }
+        //  
+       
+
+            // console.log(a);
+        localStorage.setItem('email',a);
+        localStorage.setItem('password',b);
+        
+        // localStorage.setItem('as','al')
+        // localStorage.clear()
+        })
+      
+        // let a=document.querySelector('.user').value;
+        // let b=document.querySelector('.pass').value;
+        // console.log(a);
+        // localStorage.setItem('email',a);
+        // localStorage.setItem('password',b);
+        // localStorage.setItem('as','al')
+        // localStorage.clear()
+    </script>
+</body>
+</html>

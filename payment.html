@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment  </title>
+    <link rel="stylesheet" href="f.css">
+</head>
+<script>
+    let a;
+    let date;
+    let time;
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    setInterval(() => {
+        a = new Date(); 
+        date = a.toLocaleDateString(undefined, options);
+        time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+        document.getElementById("time").innerHTML = time + "<br>on " + date;
+    }, 1000);
+</script>
+<body>
+    <div class="container my-4">
+        <div class="jumbotron">
+            <h5 >Current time Is: <span id="time"></span></h1>
+           
+        </div>
+    </div>
+
+    <form class="was-validated">
+      
+      <h1 class="payment" ><b>PAYMENT</b></h1>
+      <hr>
+      <p>Name: *<input type="text" name="name" placeholder="ex=amit singh" required>
+        <fieldset>
+            <legend>gender</legend>
+            <p>
+               male <input type="radio" name="gender" id="male" required>female<input type="radio" name="gender" id="female" required>
+
+            </p>
+
+        </fieldset>
+      </p>
+      <p>
+    Address: *<textarea name="address" id="address" cols="100" rows="8" placeholder="enter your address"></textarea>
+      </p>
+<p>
+    Email: *<input type="email" name="email" id="email" placeholder="pandey@gmail.com" required>
+</p>
+<p>
+    password: *<input type="number" name="number" id="number" placeholder="12345" required>
+</p>
+<h1 class="card" ><b>CARD INFORMATION</b></h1>
+
+<hr>
+<p>
+    card Type: *<select name="card" id="card" required>
+        <option value="">---Select a card type--</option>
+        <option value="visa">visa</option>
+        <option value="axis bamk">axis bank</option>
+    </select>
+</p>
+<p>
+    card number *<input type="number" name="number" id="number" placeholder="12345" required>
+</p>
+<p>
+    expiration date *<input type="date" name="date" id="date" required>
+</p>
+<p>
+    cvv *<input type="password" name="cvv" id="cvv" placeholder="012" required>
+</p>
+<input type="submit" value="pay now" required>
+    </form>
+  <!-- <a href="a.html"  ><b>Home</b></a></button>  -->
+  
+</body>
+</html>
+</form>
